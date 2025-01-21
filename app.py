@@ -5,6 +5,10 @@ app = Flask(__name__)
 def home():
     return "Welcome to github !"
 
+@app.route('/helpers')
+def help():
+    return "This is the Helpers page."
+
 @app.route('/about')
 def about():
     return "This is the About page."
